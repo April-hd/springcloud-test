@@ -1,0 +1,20 @@
+server:
+  port: 80
+
+spring:
+  application:
+    name: springcloud-zuul
+
+eureka:
+  client:
+    register-with-eureka: true
+    fetch-registry: true
+    service-url:
+      defaultZone: http://localhost:8761/eureka/
+
+zuul:
+  ignored-services: "*"
+  routes:
+    provider:
+      service-id: springcloud-provider-hystrix
+  prefix: /dh
