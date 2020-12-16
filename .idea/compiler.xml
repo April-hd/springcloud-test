@@ -8,9 +8,9 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="springcloud-provider" />
-        <module name="springcloud-common" />
-        <module name="springcloud-provider-hystrix" />
         <module name="springcloud-eureka" />
+        <module name="springcloud-provider-hystrix" />
+        <module name="springcloud-common" />
         <module name="springcloud-zuul" />
       </profile>
     </annotationProcessing>
